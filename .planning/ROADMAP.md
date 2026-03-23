@@ -28,7 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A campaign record can be created, read, and updated via the API with criteria, status, and timestamps
   4. Contact records store enrichment data and current pipeline stage
   5. Stage transition logs are written with status and message per campaign
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Data models (Campaign, Contact, PipelineLog) and Campaign CRUD API
+- [ ] 01-02-PLAN.md — Provider registry (PIPE-05), Docker Compose fix, and frontend scaffold
+- [ ] 01-03-PLAN.md — Full-stack verification: automated tests + Docker smoke test + human sign-off
 
 ### Phase 2: Pipeline Engine
 **Goal**: A campaign trigger causes the system to source contacts from Apollo, verify and enrich them via Snov, push clean contacts to Instantly, and trigger sending — all as a single background task with no manual steps
@@ -60,6 +65,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/3 | Not started | - |
 | 2. Pipeline Engine | 0/TBD | Not started | - |
 | 3. Dashboard | 0/TBD | Not started | - |
